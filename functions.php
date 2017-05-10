@@ -6,7 +6,7 @@
  * 'params' (array of strings). When controller / action is not available,
  * returns the default controller 'home' / action 'index'.
  */
-function parseRequest() : array
+function parseRequest() : array;
 {
     $requestPath = $_SERVER['REQUEST_URI']; // holds /blog/home/index or /home/index
     if (substr($requestPath, 0, strlen(APP_ROOT . '/')) != APP_ROOT . '/') {
